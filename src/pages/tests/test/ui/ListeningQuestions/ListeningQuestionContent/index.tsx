@@ -20,7 +20,7 @@ interface ListeningQuestionContentProps {
 
 export const ListeningQuestionContent = ({
   setListenQuestions,
-  listenQuestions,
+  // listenQuestions,
   questionContent,
 }: ListeningQuestionContentProps) => {
   const [value, setValue] = useState<string>("");
@@ -39,7 +39,7 @@ export const ListeningQuestionContent = ({
         options: variablesList.variables,
         correctAnswer: variablesList.answer,
       } as ListenQuestionsType,
-    }));
+    }) as any);
   };
 
   return (
@@ -69,7 +69,7 @@ export const ListeningQuestionContent = ({
       <Switch
         edge="end"
         onChange={switchHandler}
-        checked={variablesList.answer === item}
+        checked={variablesList.answer === ''}
       />
     </>
   );

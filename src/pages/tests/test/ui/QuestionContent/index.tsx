@@ -51,7 +51,7 @@ export const QuestionContent = ({
             }),
       };
 
-      addQuestionDataHandler(questionData);
+      addQuestionDataHandler(questionData as any);
     }
   };
 

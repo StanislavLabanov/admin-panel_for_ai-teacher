@@ -67,7 +67,7 @@ export const Tests = () => {
   };
 
   useEffect(() => {
-    setTests(data);
+    setTests(data as any);
   }, []);
 
   return (
