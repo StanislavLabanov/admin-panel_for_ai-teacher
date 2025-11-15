@@ -12,7 +12,7 @@ import { QuestionContent } from "../QuestionContent";
 
 export const TestContent = () => {
   const [questions, setQuestions] = useState<TestsType[]>([]);
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const addQuestionDataHandler = (questionData: TestsType) => {
     setQuestions((prev) => [...prev, questionData]);
@@ -50,7 +50,7 @@ export const TestContent = () => {
       )}
       <Button
         onClick={clickHandler}
-        disabled={loading}
+        // disabled={loading}
         variant="contained"
         sx={{ mt: 2 }}
         fullWidth

@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 
-import type { ListenQuestionsType, TestsType } from "@/app/types/tests";
+import type { TestsType } from "@/app/types/tests";
 import { levels, questionTypes } from "../../const/listsItems";
 import { ListeningQuestions } from "../ListeningQuestions";
 import type { ListenQuestionType, VariablesType } from "../../types";
